@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python tools/sa.py:*)",
+      "Bash(python3 tools/sa.py:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_navigate_back",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_hover",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_close"
+    ]
+  },
+  "enabledMcpjsonServers": ["playwright"],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/tools/sa.py\" resume" }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "WebFetch|Write|Edit|MultiEdit|NotebookEdit|mcp__playwright__.*",
+        "hooks": [
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/tools/sa.py\" guard" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "python \"$CLAUDE_PROJECT_DIR/tools/sa.py\" cost --hook" }
+        ]
+      }
+    ]
+  }
+}
