@@ -118,6 +118,16 @@ def main():
     (P / "work" / "plan.md").unlink()
     (P / "work" / "picture.md").unlink()
 
+    # бриф: после ответа человека пометка «умолчание» у этого вопроса считается ошибкой
+    qid = run("ask", "Какой срок?")[1].split()[0]
+    write(P, "brief.md", f"## Ограничения\n- Срок: пусто, умолчание 2 недели ({qid}).\n")
+    assert "уже есть ответ" not in msgs(P)
+    run("answer", qid, "2 недели, на проверку 6 недель")
+    assert f"work/brief.md:2: на {qid} уже есть ответ" in msgs(P), msgs(P)
+    write(P, "brief.md", f"## Ограничения\n- Решение через 2 недели, на проверку 6 недель (ответ на {qid}).\n")
+    assert "уже есть ответ" not in msgs(P)
+    (P / "work" / "brief.md").unlink()
+
     # стоимость: строки одного сообщения считаются один раз
     tr = TMP / "s1.jsonl"
     usage = {"input_tokens": 1000, "output_tokens": 100, "cache_read_input_tokens": 0,

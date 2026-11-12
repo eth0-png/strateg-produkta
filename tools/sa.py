@@ -1324,6 +1324,13 @@ def run_check(P):
         for h in sorted(set(re.findall(r"\[(H-\d+)\]", prod_text))):
             if f"[{h}]" not in val_text:
                 err("work/validation.md", f"гипотеза {h} из продуктовой стратегии не попала в план проверки")
+    brief = P / "work" / "brief.md"
+    done_q = {q["id"] for q in s["questions"] if q.get("answer")}
+    if brief.exists() and done_q:
+        for i, line in enumerate(brief.read_text(encoding="utf-8").splitlines(), 1):
+            stale = [q for q in re.findall(r"Q-\d+", line) if q in done_q]
+            if stale and re.search(r"пусто|умолчани|ждёт|пока", line, re.I):
+                err(f"work/brief.md:{i}", f"на {stale[0]} уже есть ответ, а в брифе осталась пометка: впиши ответ человека")
     asked, answered = decisive(P)
     for n in asked if asked and answered is not None else []:
         if n not in answered:
