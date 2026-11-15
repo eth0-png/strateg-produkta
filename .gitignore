@@ -5,3 +5,4 @@ __pycache__/
 projects/*/work/judge/
 docs/judge/facts.json
 docs/judge/results-*.json
+docs/judge/results-img-key.json

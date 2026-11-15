@@ -80,6 +80,7 @@ RETRY_PAUSE = 6  # секунд до повторной загрузки при 
 SA_CMD = re.compile(r"\s*(?:python3?|py)\s+(?:\./)?tools/sa\.py(?:\s|$)")
 JUDGE_FLAG = {"нет": "не следует", "частично": "следует не полностью"}
 JUDGE_PAD, JUDGE_BATCH = 350, 30
+JUDGE_FILES = {".png", ".jpg", ".jpeg", ".webp", ".pdf"}  # без текстовой копии: судья читает сам файл
 BUDGET = {"источник": "источников", "поиск": "поисков", "доллар": "долларов"}
 
 
@@ -215,16 +216,22 @@ def quote_context(P, c, src, pad=JUDGE_PAD):
 
 
 def judge_pending(P, cl, src):
-    """Действующие факты из текстовых копий внешних источников, которых судья ещё не видел.
-    Выводы расчётов и экраны со снимком судье не даём: на них он ошибается, см. docs/judge.md."""
+    """Действующие факты внешних источников, которых судья ещё не видел. Есть текстовая копия: пара идёт
+    с окружением цитаты. Источник это снимок или PDF: пара идёт с путём к файлу, судья откроет его сам.
+    Выводы расчётов и экраны с разметкой судье не даём: на них он ошибается, см. docs/judge.md."""
     out = []
     for c in cl.values():
         ss = [src.get(s, {}) for s in c.get("src", [])]
-        if (c.get("type") == "F" and c.get("status") not in GONE and not c.get("judge")
-                and not any(s.get("kind") in ("calc", "synthetic") or s.get("image") for s in ss)):
-            ctx = quote_context(P, c, src)
-            if ctx:
-                out.append({"id": c["id"], "claim": c["text"], "quote": c["quote"], "context": ctx})
+        if (c.get("type") != "F" or c.get("status") in GONE or c.get("judge")
+                or any(s.get("kind") in ("calc", "synthetic") or s.get("image") for s in ss)):
+            continue
+        item = {"id": c["id"], "claim": c["text"], "quote": c["quote"]}
+        ctx = quote_context(P, c, src)
+        f = next((s["file"] for s in ss if Path(s.get("file", "")).suffix.lower() in JUDGE_FILES and (P / s["file"]).exists()), None)
+        if ctx:
+            out.append(item | {"context": ctx})
+        elif f:
+            out.append(item | {"file": (P / f).as_posix()})
     return out
 
 
@@ -736,11 +743,14 @@ def cmd_judge(a):
             print("Новых фактов для судьи нет.")
             return
         d.mkdir(parents=True, exist_ok=True)
-        n0 = len(list(d.glob("batch-*.json")))
-        for k in range(0, len(todo), JUDGE_BATCH):
-            f = d / f"batch-{n0 + k // JUDGE_BATCH + 1}.json"
-            f.write_text(json.dumps(todo[k:k + JUDGE_BATCH], ensure_ascii=False, indent=1), encoding="utf-8")
-            print(f"projects/{P.name}/work/judge/{f.name}: фактов {len(todo[k:k + JUDGE_BATCH])}")
+        text = [t for t in todo if "context" in t]
+        batches = [text[k:k + JUDGE_BATCH] for k in range(0, len(text), JUDGE_BATCH)]
+        # снимок или PDF: отдельный пакет на файл, чтобы судья открывал один файл
+        batches += [[t for t in todo if t.get("file") == f] for f in sorted({t["file"] for t in todo if "file" in t})]
+        for n, b in enumerate(batches, len(list(d.glob("batch-*.json"))) + 1):
+            (d / f"batch-{n}.json").write_text(json.dumps(b, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"projects/{P.name}/work/judge/batch-{n}.json: фактов {len(b)}"
+                  + (f", по файлу {Path(b[0]['file']).name}" if "file" in b[0] else ""))
         print("Дальше: judge на каждый пакет, ответы сохрани как work/judge/verdict-n.json "
               "и прими: python tools/sa.py judge work/judge/verdict-1.json ...")
         return
@@ -1377,7 +1387,7 @@ def run_check(P):
             q = quote_status(P, c, src)
             if q == "missing":
                 err(f"claims {c['id']}", "цитата не найдена в копии источника")
-            elif q == "unverifiable":
+            elif q == "unverifiable" and c.get("judge") != "да":  # снимок или PDF: цитату сверил судья по файлу
                 warn(f"claims {c['id']}", "цитата не сверена автоматически (нет текстовой копии источника)")
             if c.get("judge") in JUDGE_FLAG and not c.get("judge_ok"):
                 warn(f"claims {c['id']}", f"судья: утверждение {JUDGE_FLAG[c['judge']]} из цитаты ({c.get('judge_why', '')}). "

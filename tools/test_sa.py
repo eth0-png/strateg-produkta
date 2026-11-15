@@ -333,6 +333,17 @@ def main():
     assert "под вопросом 1, ждут проверки 0" in run("resume")[1]
     assert run("confirm", fid, "--note", "период назван в заголовке статьи")[0] == 0 and "судья" not in msgs(P)
     assert run("judge", "work/judge/none.json")[0] == 1
+    # снимок без текстовой копии: пара идёт с путём к файлу отдельным пакетом, «да» судьи снимает предупреждение о цитате
+    (P / "materials" / "shot.png").write_bytes(b"PNG")
+    shot = run("add-source", "--path", "materials/shot.png", "--title", "Снимок отзыва", "--kind", "user")[1].split()[0]
+    pid = run("claim", "F", "В отзыве пользователь пишет, что карта пустая", "--src", shot, "--quote", "Карта пустая")[1].strip()
+    assert f"claims {pid}: цитата не сверена" in msgs(P)
+    out = run("judge")[1]
+    assert "по файлу shot.png" in out, out
+    b = json.loads(sorted((P / "work" / "judge").glob("batch-*.json"))[-1].read_text(encoding="utf-8"))
+    assert [x["id"] for x in b] == [pid] and b[0]["file"].endswith("materials/shot.png") and "context" not in b[0], b
+    (P / "work" / "judge" / "verdict-2.json").write_text(json.dumps([{"id": pid, "v": "да", "why": ""}]), encoding="utf-8")
+    assert run("judge", "work/judge/verdict-2.json")[0] == 0 and f"claims {pid}" not in msgs(P), msgs(P)
 
     # бюджет из policy.md: расход в сводке, превышение даёт предупреждение. Страницы одной ленты один источник
     pol = P / "policy.md"
