@@ -2,5 +2,6 @@ __pycache__/
 .claude/settings.local.json
 .sa-dev
 .playwright-mcp/
+projects/*/work/judge/
 docs/judge/facts.json
 docs/judge/results-*.json

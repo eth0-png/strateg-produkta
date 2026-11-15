@@ -239,7 +239,36 @@ def main():
     (web / "ux-1.md").write_text('- button "Оформить за 1 ₽" [ref=e12]', encoding="utf-8")
     # готовая копия источника не перезаписывается браузером
     assert guard(pw + "snapshot", filename="projects/t1/materials/web/ux-1.md") == 2
+    # оболочка: только sa.py и связка через &&. Знаки внутри кавычек это текст, а не команды
+    ok = 'python tools/sa.py claim F "цена; 5 > 3 | да" --src S-1 && python3 tools/sa.py check'
+    assert sa.shell_reason(ok) is None and sa.shell_reason("py ./tools/sa.py resume") is None
+    for cmd in ("ls", "cd projects && python tools/sa.py check", "python tools/sa.py check | tail -3",
+                "python tools/sa.py check; rm -rf x", 'python tools/sa.py log "$(cat x)"', "python tools/sa.py check\nrm x",
+                "sed -i s/a/b/ method/framing.md", "python tools/sa.py find x > materials/a.txt", "python - <<E",
+                'python tools/sa.py log "не закрыта'):
+        assert sa.shell_reason(cmd), cmd
+    assert guard("Bash", command="git status") == 2 and guard("PowerShell", command="python tools/sa.py check") == 0
+    (TMP / ".sa-dev").write_text("", encoding="utf-8")
+    assert guard("Bash", command="git status") == 0
+    (TMP / ".sa-dev").unlink()
     sys.stdin = stdin
+
+    # загрузка: на ответ 429 одна повторная попытка
+    class Page:
+        headers = type("H", (), {"get_content_type": lambda s: "text/html", "get_content_charset": lambda s: "utf-8"})()
+        __enter__, __exit__ = (lambda s: s), (lambda s, *x: None)
+        read = lambda s, n: "<p>Подписка стоит 199 рублей в месяц.</p>".encode()
+    calls = []
+
+    def flaky(req, timeout=0):
+        calls.append(1)
+        if len(calls) == 1:
+            raise sa.urllib.error.HTTPError(req.full_url, 429, "Too Many Requests", {}, None)
+        return Page()
+    real, sa.urllib.request.urlopen, sa.RETRY_PAUSE = sa.urllib.request.urlopen, flaky, 0.01
+    code, out = run("fetch", "https://kion.ru/price", "--title", "Цена")
+    sa.urllib.request.urlopen = real
+    assert code == 0 and len(calls) == 2 and "сохранён" in out, out
 
     # ярус 3: снимок экрана с разметкой, цитата сверяется по разметке, у каждого экрана свой S-n
     (web / "ux-1.png").write_bytes(b"\x89PNG")
@@ -282,6 +311,43 @@ def main():
     out = run("profile", "materials/feed.json")[1]
     assert "Строк 4" in out and "«rating.label»: заполнено 4 из 4, число" in out and "повторяются" in out, out
     assert run("profile", "AGENTS.md")[0] == 1
+
+    # судья: пакет с окружением цитаты, ответы в реестр, «нет» даёт предупреждение, confirm его снимает
+    (P / "materials" / "art.txt").write_text("По опросу за второй квартал 2026 года подписку отменили 12% клиентов. "
+                                             "Опрос шёл в Москве.", encoding="utf-8")
+    sid = run("add-source", "--path", "materials/art.txt", "--title", "Статья", "--kind", "media")[1].split()[0]
+    fid = run("claim", "F", "За полугодие подписку отменили 12% клиентов", "--src", sid,
+              "--quote", "подписку отменили 12% клиентов")[1].strip()
+    assert "batch-1.json" in run("judge")[1]
+    batch = json.loads((P / "work" / "judge" / "batch-1.json").read_text(encoding="utf-8"))
+    mine = next(b for b in batch if b["id"] == fid)
+    # факты из расчётов и экраны со снимком судье не идут
+    assert "второй квартал" in mine["context"] and not any("выгрузке" in b["claim"] or "экране" in b["claim"] for b in batch)
+    (P / "work" / "judge" / "verdict-1.json").write_text("```json\n" + json.dumps(
+        [{"id": b["id"], "v": "нет" if b["id"] == fid else "да", "why": "в цитате квартал; не полугодие"} for b in batch],
+        ensure_ascii=False) + "\n```", encoding="utf-8")
+    code, out = run("judge", "work/judge/verdict-1.json")
+    assert code == 0 and "под вопросом 1" in out and fid in out, out
+    assert f"claims {fid}: судья: утверждение не следует из цитаты (в цитате квартал, не полугодие)" in msgs(P), msgs(P)
+    assert "Новых фактов для судьи нет" in run("judge")[1]
+    assert "под вопросом 1, ждут проверки 0" in run("resume")[1]
+    assert run("confirm", fid, "--note", "период назван в заголовке статьи")[0] == 0 and "судья" not in msgs(P)
+    assert run("judge", "work/judge/none.json")[0] == 1
+
+    # бюджет из policy.md: расход в сводке, превышение даёт предупреждение. Страницы одной ленты один источник
+    pol = P / "policy.md"
+    pol.write_text(pol.read_text(encoding="utf-8") + "\n## Бюджет проекта\n- До 15 источников.\n- До 25 поисков.\n"
+                   "- До 5 долларов в ценах API.\n", encoding="utf-8")
+    for n in (1, 2):
+        run("add-source", "--url", f"https://itunes.apple.com/ru/rss/page={n}/id=1/json", "--title", f"Лента {n}", "--via", "webfetch")
+    sa.append(P / "cost.jsonl", {"session": "s2", "usd": 4.0, "searches": 3})
+    b1 = dict((k, u) for k, u, _ in sa.budget(P))
+    assert b1["поисков"] == 3 and "бюджет превышен" not in msgs(P), b1
+    run("add-source", "--url", "https://itunes.apple.com/ru/rss/page=3/id=1/json", "--title", "Лента 3", "--via", "webfetch")
+    assert dict((k, u) for k, u, _ in sa.budget(P))["источников"] == b1["источников"]
+    sa.append(P / "cost.jsonl", {"session": "s2", "usd": 6.5, "searches": 3})
+    assert "policy.md: бюджет превышен: долларов 6.5 из 5" in msgs(P), msgs(P)
+    assert "поисков 3 из 25, долларов 6.5 из 5. Превышен" in run("resume")[1], run("resume")[1]
 
     # продолжение работы и отчёт
     out = run("resume")[1]
