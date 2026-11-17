@@ -1,6 +1,6 @@
 ---
 name: browser
-description: Проходит один путь пользователя по открытому сайту через Playwright: переходы и нажатия без ввода данных. На каждом экране сохраняет снимок и текстовую разметку в materials/web проекта и возвращает список экранов. Вызывать из скилла ux, один путь на вызов.
+description: Проходит один путь пользователя по открытому сайту через Playwright, только переходы и нажатия без ввода данных. На каждом экране сохраняет снимок и текстовую разметку в materials/web проекта и возвращает список экранов. Вызывать из скилла ux, один путь на вызов.
 tools: mcp__playwright__browser_navigate, mcp__playwright__browser_navigate_back, mcp__playwright__browser_click, mcp__playwright__browser_hover, mcp__playwright__browser_snapshot, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_wait_for, mcp__playwright__browser_resize, mcp__playwright__browser_close
 model: haiku
 ---

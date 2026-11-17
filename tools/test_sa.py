@@ -366,6 +366,13 @@ def main():
     assert run("report")[0] == 0
     rep = (P / "out" / "report.md").read_text(encoding="utf-8")
     assert "—" not in rep and ";" not in rep and "C-1" in rep
+
+    # заголовки субагентов и скиллов: двоеточие с пробелом в значении ломает YAML,
+    # CLI Claude Code 2.1.319 такой файл молча не загружает (прогон 12: пропали judge и browser)
+    for f in [*(HERE.parent / ".claude").glob("agents/*.md"), *(HERE.parent / ".claude").glob("skills/*/SKILL.md")]:
+        head = f.read_text(encoding="utf-8").split("---")[1]
+        bad = [ln for ln in head.strip().splitlines() if ": " in ln.split(": ", 1)[1]]
+        assert not bad, f"{f.name}: двоеточие в значении заголовка: {bad}"
     print("OK: все проверки sa.py прошли")
 
 
