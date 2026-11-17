@@ -437,6 +437,14 @@ def cmd_next(a):
 def cmd_gate(a):
     P = current()
     s = load_state(P)
+    brief = P / "work" / "brief.md"
+    if str(a.n) == "1" and a.status == "passed" and brief.exists():
+        late = [q["id"] for q in s["questions"]
+                if q.get("answered") and dt.datetime.fromisoformat(q["answered"]).timestamp() > brief.stat().st_mtime]
+        if late:
+            die(f"Бриф не переписан после ответов человека ({', '.join(late)}). Впиши каждый ответ в work/brief.md на своё место, "
+                "ограничения (сроки, деньги, запреты) словами человека, убери пометки «без ответа» и «умолчание». "
+                "Потом повтори gate 1 passed. Подробно: скилл framing, шаг 9.")
     s["gates"][a.n] = {"status": a.status, "at": now(), "note": a.note}
     if a.status == "waiting":
         s["next"] = f"Ждём решения человека в точке {a.n} ({GATES[a.n]})"
@@ -1499,7 +1507,7 @@ def run_check(P):
     if brief.exists() and done_q:
         for i, line in enumerate(brief.read_text(encoding="utf-8").splitlines(), 1):
             stale = [q for q in re.findall(r"Q-\d+", line) if q in done_q]
-            if stale and re.search(r"пусто|умолчани|ждёт|пока", line, re.I):
+            if stale and re.search(r"пусто|умолчани|ждёт|пока|без ответа|не получен|не задан", line, re.I):
                 err(f"work/brief.md:{i}", f"на {stale[0]} уже есть ответ, а в брифе осталась пометка: впиши ответ человека")
     asked, answered = decisive(P)
     for n in asked if asked and answered is not None else []:

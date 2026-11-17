@@ -126,6 +126,15 @@ def main():
     assert f"work/brief.md:2: на {qid} уже есть ответ" in msgs(P), msgs(P)
     write(P, "brief.md", f"## Ограничения\n- Решение через 2 недели, на проверку 6 недель (ответ на {qid}).\n")
     assert "уже есть ответ" not in msgs(P)
+    write(P, "brief.md", f"## Допущения\n- {qid} без ответа: срок не задан.\n")
+    assert f"work/brief.md:2: на {qid} уже есть ответ" in msgs(P), msgs(P)
+    # точка 1 не проходит, пока бриф старше ответа человека
+    old = sa.load_state(P)["gates"].get("1")
+    os.utime(P / "work" / "brief.md", (0, 0))
+    code, errtext = run("gate", "1", "passed", "--note", "ок")
+    assert code != 0 and "Бриф не переписан" in errtext and sa.load_state(P)["gates"].get("1") == old, (code, errtext)
+    write(P, "brief.md", "## Ограничения\n- Решение через 2 недели.\n")
+    assert run("gate", "1", "passed", "--note", "ок")[0] == 0
     (P / "work" / "brief.md").unlink()
 
     # стоимость: строки одного сообщения считаются один раз
