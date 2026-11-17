@@ -14,6 +14,7 @@ from pathlib import Path
 HERE = Path(__file__).parent
 MODEL = sys.argv[1] if len(sys.argv) > 1 else "haiku"
 CTX = "ctx" in sys.argv[2:]  # ctx: судья видит ещё и окружение цитаты в копии источника
+SRC = "src" in sys.argv[2:]  # src: судья видит ещё и название источника
 BATCH = 30
 
 SYSTEM = """Ты проверяешь, следует ли утверждение из дословной цитаты источника. Ты видишь только утверждение и цитату.
@@ -32,11 +33,17 @@ CTX_NOTE = """
 К части пар дано окружение цитаты: текст источника вокруг неё, в нижнем регистре и без кавычек. Тогда утверждение должно следовать из цитаты вместе с окружением. Деталь, которая есть в окружении, не считается добавленной."""
 
 
+SRC_NOTE = """
+
+К паре дано название источника: чья это страница или документ. Деталь из названия не считается добавленной."""
+
+
 def judge(batch):
     text = "\n\n".join(f"{i}. Утверждение: {r['claim']}\nЦитата: «{r['quote']}»"
+                       + (f"\nИсточник: «{r['source']}»" if SRC and r.get("source") else "")
                        + (f"\nОкружение цитаты в источнике: «{r['context']}»" if CTX and r.get("context") else "")
                        for i, r in enumerate(batch, 1))
-    system = SYSTEM + (CTX_NOTE if CTX else "")
+    system = SYSTEM + (CTX_NOTE if CTX else "") + (SRC_NOTE if SRC else "")
     cmd = [shutil.which("claude"), "-p", "--model", MODEL, "--output-format", "json", "--system-prompt", system,
            "--tools", "", "--setting-sources", "project", "--strict-mcp-config"]
     t = time.time()
@@ -54,8 +61,9 @@ def main():
     facts = json.loads((HERE / "facts.json").read_text(encoding="utf-8"))
     bad = json.loads((HERE / "distorted.json").read_text(encoding="utf-8"))
     ctx = {r["id"]: r.get("context", "") for r in facts}
-    for r in bad:
-        r["label"], r["context"] = 0, ctx.get(r["base"], "")  # искажённой паре даём окружение её исходного факта
+    title = {r["id"]: r.get("source", "") for r in facts}
+    for r in bad:  # искажённой паре даём окружение и название источника её исходного факта
+        r["label"], r["context"], r["source"] = 0, ctx.get(r["base"], ""), title.get(r["base"], "")
     rows = facts + bad
     random.Random(12).shuffle(rows)
     batches = [rows[i:i + BATCH] for i in range(0, len(rows), BATCH)]
@@ -63,13 +71,13 @@ def main():
     with ThreadPoolExecutor(4) as ex:
         stats = list(ex.map(judge, batches))
     wall = time.time() - t
-    (HERE / f"results-{MODEL}{'-ctx' if CTX else ''}.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
+    (HERE / f"results-{MODEL}{'-ctx' if CTX else ''}{'-src' if SRC else ''}.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
 
     def count(label, verdicts):
         return sum(r["label"] == label and r["v"] in verdicts for r in rows)
 
     nb, ng = len(bad), len(facts)
-    print(f"Модель: {MODEL}{', с окружением' if CTX else ''} {sorted({m for s in stats for m in s['models']})}. Пар: {len(rows)}, пакетов: {len(batches)}.")
+    print(f"Модель: {MODEL}{', с окружением' if CTX else ''}{', с названием источника' if SRC else ''} {sorted({m for s in stats for m in s['models']})}. Пар: {len(rows)}, пакетов: {len(batches)}.")
     print(f"Искажённые ({nb}): поймано «нет» {count(0, ['нет'])}, «частично» {count(0, ['частично'])}, пропущено «да» {count(0, ['да'])}.")
     print(f"Настоящие факты ({ng}): «да» {count(1, ['да'])}, «частично» {count(1, ['частично'])}, «нет» {count(1, ['нет'])}, "
           f"без ответа {count(1, ['нет ответа'])}.")

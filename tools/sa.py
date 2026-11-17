@@ -225,7 +225,7 @@ def judge_pending(P, cl, src):
         if (c.get("type") != "F" or c.get("status") in GONE or c.get("judge")
                 or any(s.get("kind") in ("calc", "synthetic") or s.get("image") for s in ss)):
             continue
-        item = {"id": c["id"], "claim": c["text"], "quote": c["quote"]}
+        item = {"id": c["id"], "claim": c["text"], "quote": c["quote"], "source": ss[0].get("title", "") if ss else ""}
         ctx = quote_context(P, c, src)
         f = next((s["file"] for s in ss if Path(s.get("file", "")).suffix.lower() in JUDGE_FILES and (P / s["file"]).exists()), None)
         if ctx:

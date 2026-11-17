@@ -30,6 +30,7 @@ for pid in ("kion-trial", "salon-booking", "radar-megafon"):
         if c.get("type") == "F" and c.get("status") == "active" and c.get("quote"):
             kinds = sorted({src.get(s, {}).get("kind", "?") for s in c.get("src", [])})
             out.append({"id": f"{pid}/{c['id']}", "claim": c["text"], "quote": c["quote"], "kind": ",".join(kinds), "label": 1,
+                        "source": next((src[s].get("title", "") for s in c.get("src", []) if s in src), ""),
                         "context": context(P, c, src, 700 if kinds == ["calc"] else 350)})
 (Path(__file__).parent / "facts.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 by = {}
