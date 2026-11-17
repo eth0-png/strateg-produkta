@@ -378,8 +378,10 @@ def cmd_resume(a):
         out.append(f"Решающие вопросы: {len(asked)}, картины ещё нет.")
     elif asked:
         st = [answered.get(n, (0, "нет"))[1] for n in asked]
-        rest = len(asked) - st.count("закрыт") - st.count("пробел")
-        out.append(f"Решающие вопросы: {len(asked)}, закрыто {st.count('закрыт')}, пробел {st.count('пробел')}"
+        part = st.count("частично")
+        rest = len(asked) - st.count("закрыт") - st.count("пробел") - part
+        out.append(f"Решающие вопросы: {len(asked)}, закрыто {st.count('закрыт')}"
+                   + (f", частично {part}" if part else "") + f", пробел {st.count('пробел')}"
                    + (f", без ответа {rest}" if rest else "") + ".")
     try:
         res = run_check(P)
@@ -398,6 +400,9 @@ def cmd_resume(a):
     total = cost_total(P)
     if total:
         out.append(f"Стоимость на сейчас в ценах API: ${total:.2f}.")
+    if not os.environ.get("CLAUDECODE"):  # Claude Code ставит эту переменную командам оболочки, там расход пишет хук
+        out.append("Расход в этой среде сам не считается. В конце работы спроси у человека токены из статистики среды "
+                   "и внеси: sa.py cost --add <модель> <вход> <выход> --env <среда>.")
     out.append(f"Следующее действие: {s['next']}")
     print("\n".join(out))
 
@@ -1370,7 +1375,10 @@ def decisive(P):
     for i, ln in section(pic.read_text(encoding="utf-8").splitlines(), "Ответы на решающие"):
         if m := QROW.match(ln):
             body = m.group(2)
-            answered[m.group(1)] = (i, "пробел" if "пробел" in body.lower() else "закрыт" if REF.search(body) else "пусто")
+            cells, gap, ref = body.lower().split("|"), "пробел" in body.lower(), bool(REF.search(body))
+            whole = gap and (not ref or (len(cells) > 1 and cells[1].strip().startswith("пробел")))
+            # ответ начинается со слова «пробел» или меток нет: пробел. Метки есть, а пробел упомянут: закрыт частично
+            answered[m.group(1)] = (i, "пробел" if whole else "частично" if gap else "закрыт" if ref else "пусто")
     return asked, answered
 
 
