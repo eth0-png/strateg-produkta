@@ -352,6 +352,12 @@ def main():
     shot = run("add-source", "--path", "materials/shot.png", "--title", "Снимок отзыва", "--kind", "user")[1].split()[0]
     pid = run("claim", "F", "В отзыве пользователь пишет, что карта пустая", "--src", shot, "--quote", "Карта пустая")[1].strip()
     assert f"claims {pid}: цитата не сверена" in msgs(P)
+    # после сбора факт, которого судья не видел, даёт предупреждение. В сборе не напоминаем
+    st = json.loads((P / "state.json").read_text(encoding="utf-8"))
+    for step, want in (("collect", False), ("picture", True)):
+        (P / "state.json").write_text(json.dumps(st | {"step": step}, ensure_ascii=False), encoding="utf-8")
+        assert (f"claims: фактов без проверки судьёй: 1 ({pid})" in msgs(P)) == want, msgs(P)
+    (P / "state.json").write_text(json.dumps(st, ensure_ascii=False), encoding="utf-8")
     out = run("judge")[1]
     assert "по файлу shot.png" in out, out
     b = json.loads(sorted((P / "work" / "judge").glob("batch-*.json"))[-1].read_text(encoding="utf-8"))

@@ -1408,6 +1408,10 @@ def run_check(P):
             if c.get("judge") in JUDGE_FLAG and not c.get("judge_ok"):
                 warn(f"claims {c['id']}", f"судья: утверждение {JUDGE_FLAG[c['judge']]} из цитаты ({c.get('judge_why', '')}). "
                                           "Замени точным: sa.py supersede, или оставь с причиной: sa.py confirm")
+    wait = [c["id"] for c in judge_pending(P, cl, src)]
+    if wait and s.get("step") not in ("framing", "plan", "collect"):  # в сборе судья идёт последним, раньше не напоминаем
+        warn("claims", f"фактов без проверки судьёй: {len(wait)} ({', '.join(wait[:5])}{' и другие' if len(wait) > 5 else ''}). "
+                       "Проверь: sa.py judge")
     over = budget_line(P)[1]
     if over:
         warn("policy.md", f"бюджет превышен: {over}. Спроси человека и впиши согласованный бюджет в policy.md")
