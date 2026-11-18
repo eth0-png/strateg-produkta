@@ -1412,6 +1412,13 @@ def run_check(P):
     if wait and s.get("step") not in ("framing", "plan", "collect"):  # в сборе судья идёт последним, раньше не напоминаем
         warn("claims", f"фактов без проверки судьёй: {len(wait)} ({', '.join(wait[:5])}{' и другие' if len(wait) > 5 else ''}). "
                        "Проверь: sa.py judge")
+    profiled = {i for so in src.values() if so.get("script") == "sa.py profile" for i in so.get("inputs", [])}
+    for sid, so in src.items():  # расчёт по таблице без профиля: период, пропуски и единицы никто не проверил
+        raw = [i for i in so.get("inputs", []) if i not in profiled
+               and Path(src.get(i, {}).get("file", "")).suffix in (".csv", ".tsv", ".json")]
+        if raw and so.get("via") == "calc" and so.get("script") != "sa.py profile":
+            warn(f"sources {sid}", f"расчёт по таблице без профиля ({', '.join(raw)}). "
+                                   "Сначала проверь период, пропуски и единицы: sa.py profile <файлы>")
     over = budget_line(P)[1]
     if over:
         warn("policy.md", f"бюджет превышен: {over}. Спроси человека и впиши согласованный бюджет в policy.md")

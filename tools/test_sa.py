@@ -325,6 +325,14 @@ def main():
     out = run("profile", "materials/feed.json")[1]
     assert "Строк 4" in out and "«rating.label»: заполнено 4 из 4, число" in out and "повторяются" in out, out
     assert run("profile", "AGENTS.md")[0] == 1
+    # расчёт по таблице без профиля: предупреждение, после профиля пропадает
+    (P / "materials" / "rev.json").write_text(json.dumps([{"rating": 1}, {"rating": 5}]), encoding="utf-8")
+    tid = run("add-source", "--path", "materials/rev.json", "--title", "Оценки", "--kind", "ugc")[1].split()[0]
+    (P / "work" / "calc" / "rev.py").write_text("print('Оценок:', 2)\n", encoding="utf-8")
+    assert run("calc", "rev.py", "--inputs", tid)[0] == 0
+    assert f"расчёт по таблице без профиля ({tid})" in msgs(P), msgs(P)
+    assert run("profile", "materials/rev.json")[0] == 0
+    assert "расчёт по таблице без профиля" not in msgs(P), msgs(P)
 
     # судья: пакет с окружением цитаты, ответы в реестр, «нет» даёт предупреждение, confirm его снимает
     (P / "materials" / "art.txt").write_text("По опросу за второй квартал 2026 года подписку отменили 12% клиентов. "
