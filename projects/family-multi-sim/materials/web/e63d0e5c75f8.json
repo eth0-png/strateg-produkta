@@ -1,0 +1,2568 @@
+{
+ "feed": {
+  "author": {
+   "name": {
+    "label": "iTunes Store"
+   },
+   "uri": {
+    "label": "http://www.apple.com/itunes/"
+   }
+  },
+  "entry": [
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id491509851"
+     },
+     "name": {
+      "label": "SyndicateU"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-13T09:59:57-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14786293262"
+    },
+    "title": {
+     "label": "Лаги"
+    },
+    "content": {
+     "label": "Приложение постоянно тупит, не загружает страницы и не загружает информацию!!!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1729423114"
+     },
+     "name": {
+      "label": "esamakov"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-13T07:17:53-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14785750400"
+    },
+    "title": {
+     "label": "Плохое обновление"
+    },
+    "content": {
+     "label": "Ужасное приложение стало после обновления. Экран не обновляется, баланс при пополнении не обновляется",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1559185346"
+     },
+     "name": {
+      "label": "LiiiNeW"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-12T22:07:55-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14784219401"
+    },
+    "title": {
+     "label": "Самый ужасный оператор"
+    },
+    "content": {
+     "label": "Интернета у этого оператора нет совсем. Отговорка одна-по независящим от нас причинам. Платим за отсутствие интернета.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1420699342"
+     },
+     "name": {
+      "label": "YaChi22"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-12T07:13:31-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14781780529"
+    },
+    "title": {
+     "label": "Интернет"
+    },
+    "content": {
+     "label": "Не советую вообще брать что либо от этой компании, интернета нет можете забыть вообще. Ничего не говорят",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1959236623"
+     },
+     "name": {
+      "label": "Юрий strong"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-11T22:48:48-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14780388100"
+    },
+    "title": {
+     "label": "Худшее приложение"
+    },
+    "content": {
+     "label": "Приложение мобильного оператора, в которое запихнуто все , кроме мобильного оператора, сделано все для не удобства пользователя",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id422965106"
+     },
+     "name": {
+      "label": "ghfvjfvvh"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-11T18:57:08-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14779871138"
+    },
+    "title": {
+     "label": "Нельзя пополнить в приложении при минусовом баланске"
+    },
+    "content": {
+     "label": "Нельзя пополнить в приложении при минусовом баланске",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1702523368"
+     },
+     "name": {
+      "label": "Gizmo24rus"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-11T16:26:20-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14779469934"
+    },
+    "title": {
+     "label": "Больше никогда !!"
+    },
+    "content": {
+     "label": "Приобрел я значит есим через это приложение. Куар код который выдало приложение оказался нерабочий. Позвонил я значит в компанию Билайн,сутки они проверяли все,на следующий день отправляют новый, пытаюсь снова активировать есим-код не работает опять, звоню снова в компанию Билайн-двое суток проверяют опять все заново и значится выдают мне- а теперь они не могут предоставить новый куар код,так как теперь это является конфиденциальной информацией компании. Вы че там принимаете ? Чтоб я еще раз связался с вашей ccаной компанией. Деньги берут а предоставление услуг в активации является конфиденциальной информацией компании !!!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id444289191"
+     },
+     "name": {
+      "label": "Vitamin’ka"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-11T12:22:30-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14778807937"
+    },
+    "title": {
+     "label": "Разочарование!"
+    },
+    "content": {
+     "label": "Одно разочарование…. и оператор и услуги уже не те..((",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id348895785"
+     },
+     "name": {
+      "label": "rd772"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-11T11:30:27-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.51.0"
+    },
+    "id": {
+     "label": "14778653273"
+    },
+    "title": {
+     "label": "После каждого обновления, невозможно войти в приложение."
+    },
+    "content": {
+     "label": "Каждый раз, как приложение обновляется, мне приходится вытаскивать сим-карту из детских часов и вставлять её в iPhone, чтобы получить смс с кодом для входа. Хотя выбираю вход по логину и паролю, но это не помогает. Это очень неудобно! Когда нибудь будет это исправлено?!? Подсмотрите у других операторов, как это у них работает!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id401686313"
+     },
+     "name": {
+      "label": "kurgaha"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-10T23:22:33-07:00"
+    },
+    "im:rating": {
+     "label": "3"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14776440143"
+    },
+    "title": {
+     "label": "Связь только по вайфай"
+    },
+    "content": {
+     "label": "Живу на 25 этаже \nКрасного маяка 15, проверьте почему на телефоне только одна полоска Билайна \nСвязи практически нет, разговоры с помехами 😡",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id236401226"
+     },
+     "name": {
+      "label": "Sibilкм"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-10T23:06:51-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14776406005"
+    },
+    "title": {
+     "label": "Поборы не законное переключение тарифов"
+    },
+    "content": {
+     "label": "Совсем совесть потеряли . Будем искать другого поставщика услуг . Чтоб Вы там подавились",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1349478649"
+     },
+     "name": {
+      "label": "леонид леонович"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-10T17:49:27-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14775666299"
+    },
+    "title": {
+     "label": "."
+    },
+    "content": {
+     "label": "самый отвратительный оператор. при переносе есим,их внутренний гпт (bee gpt) выдал последовательность действий : 1. удалить есим с старого телефона при подключенном интернете,чтобы система могла это считать и дала установить есим на другой телефон. \nсоответственно при установке на новый телефон коду подтверждения с гос услуг придти некуда. \nподдержка на эту ситуацию ответила : ну робот может ошибиться, в течении нескольких суток рассмотрим вашу заявку.\nвторые сутки я сижу без связи из за того что приложение просто некорректно работает и из же внутренний гпт советует не пойми что .\nприходится самой писать в поддержку и спрашивать «ну что там», не уверена,что этим вопросом там вообще кто то занимается.\nв оффлайн салон,учитывая их рейтинги по москве 2-3 идти желания нет.\nхочется чтобы это поскорее закончилось и просто уже сменить оператора🫠",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1970179552"
+     },
+     "name": {
+      "label": "А16222"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-10T07:51:59-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14773959312"
+    },
+    "title": {
+     "label": "Обман"
+    },
+    "content": {
+     "label": "ИИ написало что 300 бонусных рублей плюс 60 рублей с баланса будет к оплате а сейчас стерла запись и отрицает а бонусы исчезли",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1596739934"
+     },
+     "name": {
+      "label": "Алма вас не любит"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-10T02:50:26-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14772997372"
+    },
+    "title": {
+     "label": "Мошенники по настоящему"
+    },
+    "content": {
+     "label": "Обманывают с платежами, химичат вечно что то проворачиваю, мошеннические отношения с клиентами по настоящему",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1355368819"
+     },
+     "name": {
+      "label": "Никита 46 регион"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-09T22:53:04-07:00"
+    },
+    "im:rating": {
+     "label": "2"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14772473513"
+    },
+    "title": {
+     "label": "Бесячая баги на ios"
+    },
+    "content": {
+     "label": "Сломали работу приложения на айфоне. Если пытаешься авторизоваться по логину/паролю - форма авторизации самозакрывается, если использовать автоподстановку кредов, приходится все вводить ручками. При добавлении новой карты до оплаты если сворачиваешь приложение, чтобы скопировать реквизиты из приложения банка или посмотреть код ОТП - форма тоде самозакрывается, приходится начинать рюплатеж заново",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id173361036"
+     },
+     "name": {
+      "label": "Oleg_B42"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-09T04:28:44-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14769432338"
+    },
+    "title": {
+     "label": "Неинформативно"
+    },
+    "content": {
+     "label": "Непонятно без поищи поддержки сколько мне надо класть денег и за что я плачу",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id383275163"
+     },
+     "name": {
+      "label": "liza368"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-09T03:53:24-07:00"
+    },
+    "im:rating": {
+     "label": "4"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14769328212"
+    },
+    "title": {
+     "label": "Не могу добавить еще один номер"
+    },
+    "content": {
+     "label": "Приложение нормальное, но не могу добавить ещё один номер в пользование. Исправьте , пожалуйста!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id239112873"
+     },
+     "name": {
+      "label": "Romzes99"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-09T02:24:40-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14769095970"
+    },
+    "title": {
+     "label": "Какое-то дно мобильной разработки"
+    },
+    "content": {
+     "label": "Лютая дичь, в мобильном приложении внутрь которого встроили даже какой-то ИИ до сих пор (ноябрь 2026) нет пуш-уведомлений о задолженностях и предстоящих платежах за услуги, также нет счётчика сообщений на иконке мобильного приложения.\n\n\"Это какой-то позор!\" ©️ Швондер.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1650770680"
+     },
+     "name": {
+      "label": "Nat Go"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-08T19:31:16-07:00"
+    },
+    "im:rating": {
+     "label": "5"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14768207564"
+    },
+    "title": {
+     "label": "Мне очень понравилось"
+    },
+    "content": {
+     "label": "Очень удобное стало меню, интуитивно понятное. Видно все свои номера сразу в одном приложении. Удобно управлять",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1943340765"
+     },
+     "name": {
+      "label": "My  job Fr hvggh"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-08T12:33:41-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14767110419"
+    },
+    "title": {
+     "label": "Новый Билайн"
+    },
+    "content": {
+     "label": "Пока был в Билайн все было нормально, кроме связи на даче. Переход к другому оператору начались проблемы, пришлось Билайн заблокировать! Там оставались деньги, и через несколько месяцев сняли с карты 250 рублей! За автоплатеж, хотя я его не устанавливал и сим карта была заблокирована. Как это свинство назвать?",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id974524779"
+     },
+     "name": {
+      "label": "kkaty_k"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-08T11:05:18-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14766836425"
+    },
+    "title": {
+     "label": "Не работает"
+    },
+    "content": {
+     "label": "Отвратительно работает, точнее не работает вообще. Прислали, что нужно подтвердить через гос услуги номер, пытаюсь это сделать и постоянно вылетает. Когда мой паспорт брали для оформления номера - слепые что ли были, к чему опять подтверждение? Я даже офисы где это можно сделать посмотреть в приложении не могу, они не грузятся.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id497177036"
+     },
+     "name": {
+      "label": "вмролд"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-08T09:59:52-07:00"
+    },
+    "im:rating": {
+     "label": "3"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14766620959"
+    },
+    "title": {
+     "label": "Что за джипити, когда связи нет"
+    },
+    "content": {
+     "label": "Постоянные проблемы со связью именно на Билайн теле2 работает в этом месте, зато ГПТ рекламируем а прямые обязанности не исполняем",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id227316897"
+     },
+     "name": {
+      "label": "KateaZombie"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-08T08:42:03-07:00"
+    },
+    "im:rating": {
+     "label": "5"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14766354745"
+    },
+    "title": {
+     "label": "Будьте внимательны с оплатами"
+    },
+    "content": {
+     "label": "Сначала приходит смс «пополните баланс для разблокировки домашнего интернета 750 рублей», кладу и жду (это время), пока интернет заработает. Далее самое смешное – приходит смс «750 для разблокировки не хватило, внесите ещё 8 рублей». \nКак выяснилось от поддержки, «некоторые банки ввели комиссию», которую, почему-то, оплачивает клиент.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id503075964"
+     },
+     "name": {
+      "label": "Возмущение100000"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-08T06:08:27-07:00"
+    },
+    "im:rating": {
+     "label": "2"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14765815169"
+    },
+    "title": {
+     "label": "Безобразный оператор"
+    },
+    "content": {
+     "label": "Списывают деньги как угодно",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id341010093"
+     },
+     "name": {
+      "label": "пощльгап"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-07T11:19:50-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14762803962"
+    },
+    "title": {
+     "label": "Крысы"
+    },
+    "content": {
+     "label": "Меняют условия тарифа и повышают плату без уведомления",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id312040346"
+     },
+     "name": {
+      "label": "Петрухина Анна"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-07T03:01:09-07:00"
+    },
+    "im:rating": {
+     "label": "3"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14761126876"
+    },
+    "title": {
+     "label": "Подключение ненужных подписок постоянно"
+    },
+    "content": {
+     "label": "Столкнулась неоднократно с недобросовестным отношением к постоянным клиентам, я в билайне 23 года почти, при смене собственника номера неопытные, и не компетентные сотрудники заставили меня ездить в офис несколько раз, постоянно подключаются ненужные подписки, нужно все время проверять номера родителей, потому что все время списания непонятные. Повысили тариф. По телефону решить ничего невозможно.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id353879696"
+     },
+     "name": {
+      "label": "Loners an"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-06T23:46:04-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.29.2"
+    },
+    "id": {
+     "label": "14760630809"
+    },
+    "title": {
+     "label": "Плохо"
+    },
+    "content": {
+     "label": "Верните для старых устройств для ios 15.8.8, больше не открывается приложения",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id356919605"
+     },
+     "name": {
+      "label": "Майкл 56"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-06T20:53:10-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14760235961"
+    },
+    "title": {
+     "label": "СМС оповещения"
+    },
+    "content": {
+     "label": "Стало ужасно плохо! Никаких оповещений о конце оплаты и закончившихся деньгах! Шлете всякую  ненужную информацию! А важную информацию о том что завтра отключат интернет нет!!!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1812094677"
+     },
+     "name": {
+      "label": "Pavel_RW_10"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-06T13:31:20-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14759066977"
+    },
+    "title": {
+     "label": "Приложение не работает"
+    },
+    "content": {
+     "label": "Не загружается информация о балансе и истории списания. Скорость работы приложения - низкая.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id533252685"
+     },
+     "name": {
+      "label": "‼️‼️‼️ внимание"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-06T04:21:56-07:00"
+    },
+    "im:rating": {
+     "label": "3"
+    },
+    "im:version": {
+     "label": "5.50.6"
+    },
+    "id": {
+     "label": "14757335414"
+    },
+    "title": {
+     "label": "Интернет"
+    },
+    "content": {
+     "label": "Плохой интернет , без вайфай еле двигается , а то и местами вообще не подключается……..",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id575301710"
+     },
+     "name": {
+      "label": "энгэль"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-05T09:51:05-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14754554593"
+    },
+    "title": {
+     "label": "Это кошмар"
+    },
+    "content": {
+     "label": "Ваше приложение полный провал и работа операторов с инженерами тоже так себе. Сначало не работает приложение не отображается баланс ,оборудование .потом инженеры говорят переустановите все будет работать а по итогу вообще не чего не работает!!!!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id373628668"
+     },
+     "name": {
+      "label": "zenfir21"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-04T20:20:00-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14752326746"
+    },
+    "title": {
+     "label": "Вы лучше не нейронную делали а интернет лучше сделали скорость как 2005 вообще нету ⛔"
+    },
+    "content": {
+     "label": "Самый медленный интернет у вас",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id755260357"
+     },
+     "name": {
+      "label": "Гурамчик74"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-04T06:22:38-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14749926310"
+    },
+    "title": {
+     "label": "Очень дорогая связь"
+    },
+    "content": {
+     "label": "Очень дорогая связь , а качество стало намного хуже!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id541010272"
+     },
+     "name": {
+      "label": "Пользователь//"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-04T05:17:53-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14749701842"
+    },
+    "title": {
+     "label": "Это приложение чтобы видеть рекламу????"
+    },
+    "content": {
+     "label": "После обновления не удается открыть нужную информацию о номере. «услуги и сервисы» на главном просто не грузит//\n\nЗато куча рекламы пожалуйста!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id350554562"
+     },
+     "name": {
+      "label": "Миллион баксов"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-03T23:18:17-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14748754354"
+    },
+    "title": {
+     "label": "Снизил звёздность"
+    },
+    "content": {
+     "label": "Переключение между аккаунтами так и не почнили?",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id951903287"
+     },
+     "name": {
+      "label": "MarshaEva"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-03T22:54:38-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14748703139"
+    },
+    "title": {
+     "label": "Плохое качество обслуживания"
+    },
+    "content": {
+     "label": "Специалист , а точнее не до специалист , не понимает поставленной перед ним задачей и кроме направления инструкций ничего не может предложить . Позор!!!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1147198979"
+     },
+     "name": {
+      "label": "отпгомпои"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-02T23:41:06-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14744773865"
+    },
+    "title": {
+     "label": "По непонятной причине заблокировали все денежные операции с сим-карты"
+    },
+    "content": {
+     "label": "Заблокировали все денежные операции со счетом Билайна и требуют письменное заявление с паспортными данными и подписью а также справку о доходах за последний год. Сумма пополнения была в размере 4000 рублей. Так как я официально не трудоустроен в связи с чем не могу предоставить справку о доходах, мне нужно идти в офис и писать заявление о расторжении договора  чтобы вернуть эти деньги. Как только верну свои деньги которые у меня по сути пытаются просто украсть, перейду на другого оператора. Крайне не рекомендую этого мобильного оператора так как вам могут запретить использовать и распоряжаться своими же деньгами, по выдуманным причинам или если им просто не понравится что вы решили пополнить баланс телефона на сумму больше тысячи рублей",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "1"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "1"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id250043062"
+     },
+     "name": {
+      "label": "$$$vvvtt"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-02T13:56:19-07:00"
+    },
+    "im:rating": {
+     "label": "3"
+    },
+    "im:version": {
+     "label": "5.50.5"
+    },
+    "id": {
+     "label": "14743343723"
+    },
+    "title": {
+     "label": "Неудобно"
+    },
+    "content": {
+     "label": "По сбп оплатить нельзя, не переходит в приложение. Зачем надо каждый раз вводить почту для чека, почему ее просто нельзя сохранить",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id661474467"
+     },
+     "name": {
+      "label": "JustDoItbrooo"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-02T09:04:41-07:00"
+    },
+    "im:rating": {
+     "label": "2"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14742477532"
+    },
+    "title": {
+     "label": "Могли бы и лучше"
+    },
+    "content": {
+     "label": "При подключении к Билайну, все было хорошо, ни каких вопросов не было, через какое то время, все просто как будто сломалось, интернет работает через раз, приложение вообще через мобильный интернет не заходит, выдает ошибку, почему то, уведомления о погоде и т.д приходят не по моей области а вообще из других, сколько общался со службой поддержки, так не че и не могли сделать, одни обещания…",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id415008458"
+     },
+     "name": {
+      "label": "Valery Konstantinovich"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-02T05:04:36-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14741658246"
+    },
+    "title": {
+     "label": "Проблема со входом"
+    },
+    "content": {
+     "label": "При попытке войти с логином и паролем, при сбросе пароля, выкидывает на главный экран",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id503608488"
+     },
+     "name": {
+      "label": "Airtram"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-02T04:14:36-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14741495694"
+    },
+    "title": {
+     "label": "Полный дизлайк"
+    },
+    "content": {
+     "label": "Почему на главной нельзя отключить рекламу Гаран Тур. Зачем это и как относится к связи.  Кнопка beeGPT? Зачем это навязывать. Кто хочет - включит недо ИИ.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1483682125"
+     },
+     "name": {
+      "label": "Vik-kor"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-02T00:08:48-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14740876858"
+    },
+    "title": {
+     "label": "Отвратительно"
+    },
+    "content": {
+     "label": "Поддержка нулевая, люди не умеют даже по скриптам работать. Сегодня одни условия тарифа, завтра другие. Это издевательство. Никому не советую, здесь хорошо только тем, у кого тарифы 2010-х. Сейчас стать новым клиентом это отдельный вид мазохизма. Цены конские за минимум.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "1"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "1"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id531380211"
+     },
+     "name": {
+      "label": "Mitigating"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-01T13:49:29-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14739389544"
+    },
+    "title": {
+     "label": "Приложение стало настолько убогим. Что даже не видно остатков пакетов"
+    },
+    "content": {
+     "label": "Убого стало",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1332654075"
+     },
+     "name": {
+      "label": "Алексей ккккк"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-01T10:29:57-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14738786671"
+    },
+    "title": {
+     "label": "Не заказанный обещанный платеж"
+    },
+    "content": {
+     "label": "Получил обещанный платеж в 2300 р. Не заказывал, не подтверждал. Через поддержку решить не удалось. Пришлось погасить через 10 мин после получения заплатив мошенникам 230 руб. Пришло время менять сотового оператора. Очень жаль, столько лет вместе.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1024069708"
+     },
+     "name": {
+      "label": "ashaydieh"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-01T00:54:18-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14736761147"
+    },
+    "title": {
+     "label": "Не работает телевидение"
+    },
+    "content": {
+     "label": "Сервис просто конченных Ю, не дозвониться - в поддержку пишешь через приложение, отвечает бот, который не решает проблему. А если он и зовет оператора… то вам ни кто не ответит, кроме свиста рака на горе.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id747728400"
+     },
+     "name": {
+      "label": "Илья Борский"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-01T00:07:33-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14736649571"
+    },
+    "title": {
+     "label": "Лучше бы ничего не трогали."
+    },
+    "content": {
+     "label": "В приложении настолько все запрятали, что ничего не найдёшь.  Почему нельзя сделать как было? Вот номер, вот его тариф, его детализация... Зачем все это. Увольте своих криворуких менеджеров и IT отдел вместе с дизанерами. И верните старую команду! На дно катитесь.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id1212411246"
+     },
+     "name": {
+      "label": "Shabnamhon"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-11-01T00:05:31-07:00"
+    },
+    "im:rating": {
+     "label": "5"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14736644782"
+    },
+    "title": {
+     "label": "Удобно пользоваться"
+    },
+    "content": {
+     "label": "Всё по клику!",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id610650921"
+     },
+     "name": {
+      "label": "Хренетт"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-10-31T10:12:08-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14734497524"
+    },
+    "title": {
+     "label": "Билайн 2026"
+    },
+    "content": {
+     "label": "Скачать Билайн на Билайне 21 мин это топ скорость. Ограничений нет но они су кааа есть🤣🤣🤣🤣🤣зато платить как за полноценный тариф",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id628648311"
+     },
+     "name": {
+      "label": "ptemnikova"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-10-31T02:14:56-07:00"
+    },
+    "im:rating": {
+     "label": "2"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14732922109"
+    },
+    "title": {
+     "label": "Зумеров понаберут, а те работать не умеют"
+    },
+    "content": {
+     "label": "Тупые как пробка, отправить смс «доброе утро, пароль направили вам в смс» они могут, а отправить сам пароль нет. Больше месяца пишу им в ЛК, прошу прислать любым удобным способом, если не получается по смс, указываю все контактные данные, в том числе сама переписка с оператором в ЛК, но нет, кормят завтраками",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "0"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "0"
+    }
+   },
+   {
+    "author": {
+     "uri": {
+      "label": "https://itunes.apple.com/ru/reviews/id402629583"
+     },
+     "name": {
+      "label": "LesnoyBrat"
+     },
+     "label": ""
+    },
+    "updated": {
+     "label": "2026-10-31T01:06:14-07:00"
+    },
+    "im:rating": {
+     "label": "1"
+    },
+    "im:version": {
+     "label": "5.50.1"
+    },
+    "id": {
+     "label": "14732750489"
+    },
+    "title": {
+     "label": "Упоротые"
+    },
+    "content": {
+     "label": "Превратили, некогда, хороший, простой инструмент в полную кашу-парашу.",
+     "attributes": {
+      "type": "text"
+     }
+    },
+    "link": {
+     "attributes": {
+      "rel": "related",
+      "href": "https://itunes.apple.com/ru/review?id=569251594&type=Purple%20Software"
+     }
+    },
+    "im:voteSum": {
+     "label": "1"
+    },
+    "im:contentType": {
+     "attributes": {
+      "term": "Application",
+      "label": "Приложение"
+     }
+    },
+    "im:voteCount": {
+     "label": "1"
+    }
+   }
+  ],
+  "updated": {
+   "label": "2026-11-22T09:56:47-07:00"
+  },
+  "rights": {
+   "label": "Copyright 2008 Apple Inc."
+  },
+  "title": {
+   "label": "iTunes Store: Отзывы покупателей"
+  },
+  "icon": {
+   "label": "http://itunes.apple.com/favicon.ico"
+  },
+  "link": [
+   {
+    "attributes": {
+     "rel": "alternate",
+     "type": "text/html",
+     "href": "https://music.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=ru&id=134570"
+    }
+   },
+   {
+    "attributes": {
+     "rel": "self",
+     "href": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=569251594/sortby=mostrecent/json"
+    }
+   },
+   {
+    "attributes": {
+     "rel": "first",
+     "href": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=569251594/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=569251594/sortby=mostrecent/json"
+    }
+   },
+   {
+    "attributes": {
+     "rel": "last",
+     "href": "https://itunes.apple.com/ru/rss/customerreviews/page=10/id=569251594/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=569251594/sortby=mostrecent/json"
+    }
+   },
+   {
+    "attributes": {
+     "rel": "previous",
+     "href": "https://itunes.apple.com/ru/rss/customerreviews/page=1/id=569251594/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=569251594/sortby=mostrecent/json"
+    }
+   },
+   {
+    "attributes": {
+     "rel": "next",
+     "href": "https://itunes.apple.com/ru/rss/customerreviews/page=3/id=569251594/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=569251594/sortby=mostrecent/json"
+    }
+   }
+  ],
+  "id": {
+   "label": "https://itunes.apple.com/ru/rss/customerreviews/page=2/id=569251594/sortby=mostrecent/json"
+  }
+ }
+}
